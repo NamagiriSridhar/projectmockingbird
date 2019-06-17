@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Home</title>
+		<link th:replace="./fragments/bootstrap :: bootstrap"></link>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div th:replace="./fragments/navbar :: navbar"></div>
+			<h1>Welcome to Project MockingBird</h1>
+	
+			<form action="#">
+				<label>UserName</label>
+				<input type="text" class="form-control" placeholder="type user name here"/>
+				<label>Password</label>
+				<input type="password" class="form-control" placeholder="type password here"/>	
+				<button type="submit" class="btn btn-primary">Submit Login Form</button>						
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Home</title>
+		<link th:replace="./fragments/bootstrap :: bootstrap"></link>
+	</head> 
+	<body>
+		<div class="container">
+			<div th:replace="./fragments/navbar :: navbar"></div>
+			<h2>Registration</h2>
+			<form>
+				<label>FirstName</label>
+				<input type="text" class="form-control" placeholder="type first name here"/>
+				<label>LastName</label>
+				<input type="text" class="form-control" placeholder="type last name here"/>
+				<label>UserName</label>
+				<input type="text" class="form-control" placeholder="type user name here"/>			
+				<label>Email</label>
+				<input type="email" class="form-control" placeholder="type email here"/>
+				<label>Password</label>
+				<input type="password" class="form-control" placeholder="type password here"/>	
+				<button type="submit" class="btn btn-warning">Submit Registration Form</button>		
+			</form>
+		</div>
+	</body>
+</html>
